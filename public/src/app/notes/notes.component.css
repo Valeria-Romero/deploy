@@ -1,0 +1,50 @@
+.eachnote{
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+.date{
+    text-align: right;
+}
+
+.container{
+    background-color: rgb(182, 182, 182);
+    padding: 20px 30px 20px 30px;
+}
+
+.allNotes{
+    overflow: scroll;
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px;
+    height: 70vh;
+}
+
+.postNotes{
+    border: 1px solid black;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: white;
+    margin-bottom: 10px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+button{
+    width: 80px;
+}
+
+input{
+    width: 100%;
+}

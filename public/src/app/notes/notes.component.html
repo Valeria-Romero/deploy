@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Anonymous notes</h1>
+    
+    <div class="postNotes">
+        <form (submit) = "postNote( $event)">
+                <label for="content">
+                    Note:
+                </label>
+                <input type="text" name="content" [(ngModel)] = "content">
+                <button type="submit">
+                    Add note
+                </button>
+        </form>
+        {{errorMessage}}
+    </div>
+    
+    <div class="allNotes">
+        <div *ngFor = "let note of allNotes" class="eachnote">
+            <div class="date">
+                <h4>Noted on: {{note.created_at}}</h4>
+            </div>
+            <div>
+                <h3>{{note.content}}</h3>
+            </div>
+        </div>
+    </div>
+</div>
